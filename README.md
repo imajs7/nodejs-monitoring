@@ -617,6 +617,6 @@ MIT License - see LICENSE file for details.
 
 ## Support
 
-- GitHub Issues: [Report bugs and request features](https://github.com/yourusername/nodejs-monitoring/issues)
-- Documentation: [Full API documentation](https://github.com/yourusername/nodejs-monitoring/wiki)
-- Examples: [More examples and use cases](https://github.com/yourusername/nodejs-monitoring/tree/main/examples)
+- GitHub Issues: [Report bugs and request features](https://github.com/imajs7/nodejs-monitoring/issues)
+- Documentation: [Full API documentation](https://github.com/imajs7/nodejs-monitoring/wiki)
+- Examples: [More examples and use cases](https://github.com/imajs7/nodejs-monitoring/tree/main/examples)
