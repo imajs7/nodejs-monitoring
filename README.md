@@ -16,7 +16,7 @@ A comprehensive monitoring service for Node.js applications with built-in health
 ## Installation
 
 ```bash
-npm install @yourorg/nodejs-monitoring
+npm install @merncloud/nodejs-monitoring
 ```
 
 ## Quick Start
@@ -25,7 +25,7 @@ npm install @yourorg/nodejs-monitoring
 
 ```typescript
 import express from "express";
-import { setupMonitoring } from "@yourorg/nodejs-monitoring";
+import { setupMonitoring } from "@merncloud/nodejs-monitoring";
 
 const app = express();
 
@@ -47,7 +47,10 @@ app.listen(3000, () => {
 
 ```typescript
 import express from "express";
-import { setupMonitoring, MonitoringService } from "@yourorg/nodejs-monitoring";
+import {
+  setupMonitoring,
+  MonitoringService,
+} from "@merncloud/nodejs-monitoring";
 
 const app = express();
 
@@ -199,7 +202,7 @@ Returns historical metrics data:
 Create custom health checks for your specific needs:
 
 ```typescript
-import { CustomProbe, ProbeResult } from "@yourorg/nodejs-monitoring";
+import { CustomProbe, ProbeResult } from "@merncloud/nodejs-monitoring";
 
 // Simple probe
 const customProbe: CustomProbe = {
@@ -322,7 +325,7 @@ interface AlertThresholds {
 You can also use the monitoring service manually without Express:
 
 ```typescript
-import { MonitoringService } from "@yourorg/nodejs-monitoring";
+import { MonitoringService } from "@merncloud/nodejs-monitoring";
 
 // Initialize monitoring service
 const monitoring = MonitoringService.getInstance({
@@ -354,7 +357,7 @@ monitoring.addProbe({
 
 ```typescript
 import express from "express";
-import { setupMonitoring } from "@yourorg/nodejs-monitoring";
+import { setupMonitoring } from "@merncloud/nodejs-monitoring";
 
 const app = express();
 
@@ -393,7 +396,7 @@ export default app;
 ```typescript
 import { NestFactory } from "@nestjs/core";
 import { AppModule } from "./app.module";
-import { setupMonitoring } from "@yourorg/nodejs-monitoring";
+import { setupMonitoring } from "@merncloud/nodejs-monitoring";
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
@@ -431,7 +434,7 @@ bootstrap();
 
 ```typescript
 import Koa from "koa";
-import { MonitoringService } from "@yourorg/nodejs-monitoring";
+import { MonitoringService } from "@merncloud/nodejs-monitoring";
 
 const app = new Koa();
 
@@ -544,7 +547,7 @@ Create a simple monitoring dashboard:
 ### Example Production Setup
 
 ```typescript
-import { setupMonitoring } from "@yourorg/nodejs-monitoring";
+import { setupMonitoring } from "@merncloud/nodejs-monitoring";
 
 const monitoring = setupMonitoring(app, {
   healthRoutePath: process.env.HEALTH_ENDPOINT || "/internal/health",
